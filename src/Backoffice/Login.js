@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export default class MentionsLegal extends React.Component {
+export default class Login extends React.Component {
     constructor(props) {
         super(props);
 
@@ -13,7 +13,7 @@ export default class MentionsLegal extends React.Component {
 
     render() {
         return <div className="component">
-            Je suis la page des mentions legales
+            Login
         </div>
         
     }
