@@ -1,0 +1,49 @@
+.website-access-button {
+    display: flex;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 5vh;
+    z-index: 10;
+}
+.website-access-button a {
+    cursor: pointer;
+}
+.website-access-button > a > img {
+    width: 3vw;
+}
+.website-access-button a:hover {
+    transition: 0.5s ease-in-out;
+}
+@font-face {
+	font-family: "Segoe";
+	src: url('../media/Segoe_Print.ttf');
+}
+.website-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 30vh;
+    color: #F4F4F4;
+    text-shadow:0 0 5px black ;
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+.website-title > span {
+    width: 100vw;
+}
+.component.first-component {
+    background-color: black;
+    z-index: 0;
+    overflow: hidden;
+}
+.component.first-component img::selection {
+    background-color: none;
+}
+
+.carousel.carousel-slider .control-arrow {
+    height: 100vh;
+}

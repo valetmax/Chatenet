@@ -1,0 +1,55 @@
+
+.ligne-img-bottom {
+    position: absolute;
+    width: 100vw;
+    height: 15vh;
+    bottom: 0px;
+}
+
+.ligne-img-top {
+    position: absolute;
+    width: 100vw;
+    height: 15vh;
+    top: 0px;
+}
+
+.component {
+    height: 100%;
+    width: 100%;
+}
+
+.component.about-component {
+    background-color:#146C2C;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    position: relative;
+}
+
+.component.product-component {
+    background-color: #E1C9AF;
+    color: #146C2C;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    position: relative;
+}
+
+.component.contact-component {
+    background-color:#3b8db0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    position: relative;
+} 
+
+footer {
+    position: absolute;
+    bottom: 5vh;
+}
