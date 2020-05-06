@@ -19,8 +19,8 @@
 }
 
 .component.about-component {
-    background-color:#146C2C;
-    color: white;
+    background-color:#32ac45;
+    color: #ffafec;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,9 +28,16 @@
     position: relative;
 }
 
+@media only screen and (max-width: 475px) {
+    .component.about-component .content-photos {
+        display: none;
+    }
+}
+
+
 .component.product-component {
-    background-color: #E1C9AF;
-    color: #146C2C;
+    background-color: #ffafec;
+    color: #32ac45;
 
     display: flex;
     flex-direction: column;
@@ -41,7 +48,7 @@
 }
 
 .component.contact-component {
-    background-color:#3b8db0;
+    background-color:#5d7be1;
     display: flex;
     align-items: center;
     justify-content: center;
