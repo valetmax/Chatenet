@@ -1,6 +1,6 @@
 import React from "react";
-import {ComponentContactName} from "../configuration/MenuConfig";
-import LigneImage from "../media/ligne_top.png";
+import {ComponentContactName} from "../../configuration/MenuConfig";
+import LigneImage from "../../media/ligne_top.png";
 import Link from "react-router-dom/Link";
 import "./component.css";
 import "./content.css"
@@ -18,7 +18,7 @@ export default class ContactComponent extends React.Component {
         
             <section className="component contact-component">
     
-                <img src={LigneImage} className="ligne-img-top" alt="Une ligne inutile"/>
+                <img src={LigneImage} className="ligne-img-top" alt="Une ligne inutile" />
     
                 <div className="content">
                     <div className="content-map">
@@ -40,7 +40,7 @@ export default class ContactComponent extends React.Component {
                             - De juin à aout : <br/><br/>
                             - Fermé en aout 
                         </p>
-                        <a href="https://goo.gl/maps/TA47Tv5YB9PWzsDs5" target="_blank"> Voir l'itinéraire</a>
+                        <a href="https://goo.gl/maps/TA47Tv5YB9PWzsDs5" target="_blank" rel="noopener noreferrer"> Voir l'itinéraire</a>
                     </div>
                 </div>
                 <footer>

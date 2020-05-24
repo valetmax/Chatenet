@@ -1,5 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { render, hydrate } from 'react-dom';
+import config from './configuration/FirebaseConfig';
 import {
     HashRouter as Router,
     Route,
@@ -7,12 +8,13 @@ import {
 } from "react-router-dom";
 
 import "./index.css";
-import FirstPage from "./FirstPage";
-import MentionsLegal from "./MentionsLegal";
-import Login from "./Backoffice/Login";
+import FirstPage from "./page/FirstPage";
+import MentionsLegal from "./page/MentionsLegal";
+import Login from "./backoffice/Login";
 
-ReactDOM.render(
-    <Router basename="/">
+const rootElement = document.getElementById("root");
+if (rootElement.hasChildNodes()) {
+    hydrate(<Router basename="/">
         <div>
             <Switch>
                 <Route exact path="/" name="Les vergers de chatenet" component={FirstPage}/>
@@ -21,5 +23,19 @@ ReactDOM.render(
             </Switch>
         </div>
     </Router>,
-    document.getElementById("root")
+    rootElement
 );
+} else {
+    render(
+        <Router basename="/">
+            <div>
+                <Switch>
+                    <Route exact path="/" name="Les vergers de chatenet" component={FirstPage}/>
+                    <Route path="/mentions-legal" name="verger de chatenet" component={MentionsLegal}/>
+                    <Route path="/backoffice" name="verger de chatenet" component={Login}/>
+                </Switch>
+            </div>
+        </Router>,
+        rootElement
+    );
+}

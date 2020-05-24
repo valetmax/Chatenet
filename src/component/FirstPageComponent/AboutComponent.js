@@ -1,13 +1,10 @@
 import React from "react";
-import {ComponentAboutName} from "../configuration/MenuConfig";
-import LigneImage from "../media/ligne_bottom.png";
+import {ComponentAboutName} from "../../configuration/MenuConfig";
+import LigneImage from "../../media/ligne_bottom.png";
 import "./component.css";
 import "./content.css";
 
 export default class AboutComponent extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     render () {
         return (
@@ -15,7 +12,7 @@ export default class AboutComponent extends React.Component {
                 <div className="content">
                     <div className="content-photos">Photos</div>
                     <div className="content-text text">
-                        <h2>Chatenet</h2>
+                        <h2>{ComponentAboutName}</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Aenean rutrum orci quam, ut lobortis neque ullamcorper scelerisque. 
@@ -30,7 +27,7 @@ export default class AboutComponent extends React.Component {
                         </p>
                     </div>
                 </div>
-                <img src={LigneImage} className="ligne-img-bottom" alt="Une ligne inutile"/>
+                <img src={LigneImage} className="ligne-img-bottom" alt="Une ligne inutile" />
             </section>
         )
     }

@@ -2,14 +2,14 @@ import React from "react";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import "../FirstPageComponent/firstComponent.css";
+import "./firstComponent.css";
 
-import CarouselImg1 from '../media/CarouselleAcceuil/image-accueuil-1bis.jpg';
-import CarouselImg2 from '../media/CarouselleAcceuil/image-accueuil-2.jpg';
-import CarouselImg3 from '../media/CarouselleAcceuil/image-accueuil-3.jpg';
-import CarouselImg4 from '../media/CarouselleAcceuil/image-accueuil-4.jpg';
-import CarouselImg1Mobile from '../media/p4.png';
-import ArrowDown from '../media/arrowDown-512x512.png';
+import CarouselImg1 from '../../media/CarouselleAcceuil/image-accueuil-1bis.jpg';
+import CarouselImg2 from '../../media/CarouselleAcceuil/image-accueuil-2.jpg';
+import CarouselImg3 from '../../media/CarouselleAcceuil/image-accueuil-3.jpg';
+import CarouselImg4 from '../../media/CarouselleAcceuil/image-accueuil-4.jpg';
+import CarouselImg1Mobile from '../../media/p4.png';
+import ArrowDown from '../../media/arrowDown-512x512.png';
 
 export default class FistComponent extends React.Component {
     constructor(props) {
@@ -67,9 +67,9 @@ export default class FistComponent extends React.Component {
                     <span>CHATENET</span>
                 </h1>
                 <div className="website-access-button">
-                    <a onClick={(eventKey) => this.parentPage.goToPage(1)}>
-                        <img src={ArrowDown}/>
-                    </a>
+                    <div onClick={(eventKey) => this.parentPage.goToPage(1)}>
+                        <img src={ArrowDown} alt="fleche vers le bas" />
+                    </div>
                 </div>
             
             </section>  ;  

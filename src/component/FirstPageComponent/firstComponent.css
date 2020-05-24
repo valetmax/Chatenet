@@ -6,18 +6,14 @@
     bottom: 5vh;
     z-index: 10;
 }
-.website-access-button a {
+.website-access-button div {
     cursor: pointer;
 }
-.website-access-button > a > img {
+.website-access-button > div > img {
     width: 3vw;
 }
-.website-access-button a:hover {
+.website-access-button div:hover {
     transition: 0.5s ease-in-out;
-}
-@font-face {
-	font-family: "Segoe";
-	src: url('../media/Segoe_Print.ttf');
 }
 .website-title {
     display: flex;

@@ -2,10 +2,6 @@ import React from "react";
 
 
 export default class MentionsLegal extends React.Component {
-    constructor(props) {
-        super(props);
-
-    }
 
     componentDidMount(){
         

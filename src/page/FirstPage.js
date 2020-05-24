@@ -2,14 +2,14 @@ import React from "react";
 
 
 import ReactPageScroller from "react-page-scroller";
-import FirstComponent from "./FirstPageComponent/FirstComponent";
-import AboutComponent from "./FirstPageComponent/AboutComponent";
-import ProductComponent from "./FirstPageComponent/ProductComponent";
-import ContactComponent from "./FirstPageComponent/ContactComponent";
+import FirstComponent from "../component/FirstPageComponent/FirstComponent";
+import AboutComponent from "../component/FirstPageComponent/AboutComponent";
+import ProductComponent from "../component/FirstPageComponent/ProductComponent";
+import ContactComponent from "../component/FirstPageComponent/ContactComponent";
 
-import {ComponentsNames} from "./configuration/MenuConfig";
+import {ComponentsNames} from "../configuration/MenuConfig";
 
-import "./index.css";
+import "../index.css";
 import "./menu.css";
 
 
@@ -80,7 +80,7 @@ export default class FirstPage extends React.Component {
             
             <ReactPageScroller ref={c => this._pageScroller = c} pageOnChange={this.pageOnChange}>
                 <FirstComponent parentPage={this}/>
-                <AboutComponent/>
+                <AboutComponent />
                 <ProductComponent />
                 <ContactComponent />
             </ReactPageScroller>

@@ -1,10 +1,10 @@
 import React from "react";
-import {ComponentProductName} from "../configuration/MenuConfig";
+import {ComponentProductName} from "../../configuration/MenuConfig";
 
-import CeriseImg from "../media/Lame3/cerise.jpg";
-import AbricotImg from "../media/Lame3/abricot.jpg";
-import PommeImg from "../media/Lame3/pomme.jpg";
-import MagasinImg from "../media/Lame3/magasin.jpg";
+import CeriseImg from "../../media/Lame3/cerise.jpg";
+import AbricotImg from "../../media/Lame3/abricot.jpg";
+import PommeImg from "../../media/Lame3/pomme.jpg";
+import MagasinImg from "../../media/Lame3/magasin.jpg";
 
 import "./content.css";
 
@@ -13,7 +13,7 @@ export default () => {
         <section className="component product-component">
             <div className="content-head text">
                 {/* <h2>{ComponentProductName}</h2> */}
-                <h2>fruits et légumes</h2>
+                <h2>{ComponentProductName}</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Aenean rutrum orci quam, ut lobortis neque ullamcorper scelerisque. 
@@ -27,19 +27,19 @@ export default () => {
            
             <div className="content">
                 <div className="content-3">
-                    <img src={PommeImg} className="content-img" />
+                    <img src={PommeImg} className="content-img" alt="une test" />
                     <span className="content-img-title"><h3>Pommes</h3></span>
                 </div>
                 <div className="content-3">
-                    <img src={CeriseImg} className="content-img" />
+                    <img src={CeriseImg} className="content-img" alt="une test"/>
                     <span className="content-img-title"><h3>Cerises</h3></span>
                 </div>
                 <div className="content-3">
-                    <img src={AbricotImg} className="content-img" />
+                    <img src={AbricotImg} className="content-img" alt="une test" />
                     <span className="content-img-title"><h3>Abricots</h3></span>
                 </div>
                 <div className="content-3">
-                    <img src={MagasinImg} className="content-img" />
+                    <img src={MagasinImg} className="content-img" alt="une test" />
                     <span className="content-img-title"><h3>Notre magasin</h3></span>
                 </div>
             </div>

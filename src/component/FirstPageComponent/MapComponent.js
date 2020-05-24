@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
-import Leaflet from 'leaflet';
-import { Map, Marker, Popup, TileLayer, GeoJSON } from 'react-leaflet';
+import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 
 class ReactLeafletMap extends PureComponent {
   state = {
